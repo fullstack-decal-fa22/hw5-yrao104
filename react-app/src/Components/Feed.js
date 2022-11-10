@@ -1,4 +1,5 @@
 import React from 'react';
+import axios from "axios";
 import Post from "./Post";
 import NewPost from "./NewPost";
 import {useState, useEffect} from 'react';

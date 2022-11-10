@@ -9,7 +9,7 @@ const Comments = ({ postId, comments: initialComments }) => {
     console.log(newComment)
     // Un-comment the lines below to complete your solution
     // ====================
-    axios.post("http://localhost:3002/post/${postId}/comment", { newComment }).then((res) => {
+    axios.post(`http://localhost:3002/post/${postId}/comment`, { newComment }).then((res) => {
       setComments(res.data.comments);
       setNewComment("")
     })
